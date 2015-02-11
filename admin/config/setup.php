@@ -39,5 +39,8 @@ include('config/queries.php');
 # User Setup:
 $user = data_user($dbc, $_SESSION['username']);
 
+#opened fix no variable defined:
+if(!isset($opened)){$opened=NULL;}
+
 
 ?>
